@@ -3,19 +3,11 @@ html,
 #root {
   height: 100%;
 }
-
 html {
   font-size: 18px;
 }
-
-.greeting {
-  background-image: linear-gradient(rgb(240, 176, 88), #121212);
-  color: #fff;
-  font-family: 'Poppins', sans-serif;
-  padding: .77rem;
-}
 .spotify-logo {
-  height: 90px;
+  height: 1.88rem;
 }
 h1 {
   font-size: 1.88rem;
@@ -54,4 +46,13 @@ h2 {
     align-items: center;
     flex-direction: column;
   }
+  .App{
+    padding: 0 10% 10% 10%;
+  }
+}
+.greeting {
+  background-image: linear-gradient(rgb(240, 176, 88), #121212);
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  padding-top: 5%;
 }
