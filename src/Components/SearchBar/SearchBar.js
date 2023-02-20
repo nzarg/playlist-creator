@@ -13,15 +13,20 @@ export class SearchBar extends React.Component {
     this.setState({ term: e.target.value });
   }
 
-  search() {
+  search(e) {
+    e.preventDefault();
     this.props.onSearch(this.state.term);
   }
 
   render() {
     return (
       <div className="SearchBar">
+        <form>
         <input placeholder="Enter A Song, Album, or Artist" onChange={this.handleTermChange} />
-        <button className="SearchButton" onClick={this.search}>SEARCH</button>
+        <div>
+        <button type='submit' className="SearchButton" onClick={this.search}>SEARCH</button>
+        </div>
+        </form>
       </div>
     );
   }

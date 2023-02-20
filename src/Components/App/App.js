@@ -27,6 +27,8 @@ class App extends React.Component {
 
   componentDidMount() {
     this.greetings();
+    window.addEventListener('load', () => {Spotify.getAccessToken()});
+
   }
 
   addTrack(track) {

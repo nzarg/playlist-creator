@@ -23,6 +23,14 @@
   outline: none;
 }
 
+.SearchBar form {
+  display: inline-block;
+}
+
+.SearchBar form div {
+  text-align: center;
+}
+
 .SearchButton {
   cursor: pointer;
   width: 8.11rem;
